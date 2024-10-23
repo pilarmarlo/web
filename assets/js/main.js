@@ -30,3 +30,32 @@ function changeEmojiColor(elem){
     const b = randInt(0,255);
     elem.style.fill = 'rgb(' + r + ',' + g + ',' + b + ')';
 }
+
+function hover(elem){
+    elem.style.fill = '#B2D2FF';
+}
+
+function rest(elem){
+    elem.style.fill ='white';
+}
+
+function noche(elem){
+    const foto = document.getElementsByTagName("main");
+    foto[0].style.backgroundImage = "url('../assets/img/noche-fria.jpg')";
+
+    const cabecera = document.getElementsByTagName("header");
+    cabecera[0].style.backgroundColor = 'black';
+
+    const pie = document.getElementsByTagName("footer");
+    pie[0].style.backgroundColor = 'black';
+
+    const textos = document.getElementsByTagName("h1");
+    textos[0].style.color = 'white';
+
+    const textofooter = document.getElementsByTagName("h2")
+    textofooter[0].style.color = 'white'; 
+
+    const reloj = document.getElementById("clock");
+    reloj.style.color = 'white'; 
+}
+
