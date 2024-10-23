@@ -57,5 +57,8 @@ function noche(elem){
 
     const reloj = document.getElementById("clock");
     reloj.style.color = 'white'; 
+
+    const sol = document.getElementsByTagName("svg.bi.bi-moon-stars-fill");
+    sol.innerhtml = 
 }
 
